@@ -31,10 +31,11 @@ Rect? _trim(
 ///
 ///  * [SliverAppBar], which creates a header that can be stretched into an
 ///    overscroll area and trigger a callback function.
+@immutable
 class OverScrollHeaderStretchConfiguration {
   /// Creates an object that specifies how a stretched header may activate an
   /// [AsyncCallback].
-  OverScrollHeaderStretchConfiguration({
+  const OverScrollHeaderStretchConfiguration({
     this.stretchTriggerOffset = 100.0,
     this.onStretchTrigger,
   }) : assert(stretchTriggerOffset != null);

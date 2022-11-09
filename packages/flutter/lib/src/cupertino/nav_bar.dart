@@ -756,7 +756,7 @@ class _CupertinoSliverNavigationBarState extends State<CupertinoSliverNavigation
           heroTag: widget.heroTag,
           persistentHeight: _kNavBarPersistentHeight + MediaQuery.of(context).padding.top,
           alwaysShowMiddle: widget.alwaysShowMiddle && widget.middle != null,
-          stretchConfiguration: widget.stretch ? OverScrollHeaderStretchConfiguration() : null,
+          stretchConfiguration: widget.stretch ? const OverScrollHeaderStretchConfiguration() : null,
         ),
       ),
     );
